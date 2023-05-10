@@ -426,7 +426,7 @@ display: none;
 .grid-paragraph {
     color: #686f78;
     font-family: 'Maeven Pro', sans-serif;
-    font-weight: 300;
+    font-weight: 600;
     letter-spacing: 1px;
     line-height: 1.5;
     animation: fadeIn 1.5s ease-in-out forwards;
@@ -455,7 +455,6 @@ display: none;
   
   .grid-container .grid-item img {
     width: 80%;
-    height: 80%;
     object-fit: cover;
     filter: opacity(70%);
     transition: all 0.2s ease-in-out;
@@ -516,7 +515,7 @@ display: none;
 .about-paragraph {
     color: #686f78;
     font-family: 'Maeven Pro', sans-serif;
-    font-weight: 300;
+    font-weight: 600;
     letter-spacing: 1px;
     line-height: 1.5;
     animation: fadeIn 1.5s ease-in-out forwards;
@@ -535,7 +534,7 @@ display: none;
 .about-paragraph2 {
     color: #686f78;
     font-family: 'Maeven Pro', sans-serif;
-    font-weight: 300;
+    font-weight: 600;
     letter-spacing: 1px;
     line-height: 1.5;
     animation: fadeIn 1.5s ease-in-out forwards;
@@ -562,6 +561,7 @@ display: none;
 .me2:hover{
     transform: scale(1.03);
 }
+
 
 @media (max-width: 1324px) {
     .rectangle3,
@@ -645,3 +645,136 @@ display: none;
 
   }
 
+
+  .card1, .card2, .card3 {
+    box-sizing: border-box;
+    width: 320px;
+    height: 434px;
+    background: #181e24;
+    box-shadow: 12px 12px 24px #101418, -12px -12px 24px #202830;
+    backdrop-filter: blur(6px);
+    border-radius: 24px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-weight: bolder;
+    flex-direction: column;
+    
+    color: rgba(255, 255, 255, 0.892);
+  }
+
+  
+  .card1:hover, .card2:hover, .card3:hover {
+    transform: scale(1.05);
+  }
+  .container {
+    display: flex;
+    gap: 4%;
+    margin: 6% auto;
+
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1056px;
+}
+
+.card1h {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem; /* Reduced margin-bottom to move text closer to the image */
+}
+
+.card1p {
+    color: #686f78;
+    font-family: 'Maeven Pro', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    font-size: calc(0.5rem + 0.5vw);
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.card1i img {
+    margin-top: 2vw;
+    width: 10vw; /* Set width relative to the viewport width */
+    max-width: 100%; /* Set max-width to 100% to prevent image overflow */
+    height: auto; /* Set height to auto to maintain the aspect ratio */
+    object-fit: cover; /* Maintain the aspect ratio of the image */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card2h {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem; /* Reduced margin-bottom to move text closer to the image */
+}
+
+.card2p {
+    color: #686f78;
+    font-family: 'Maeven Pro', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    font-size: calc(0.5rem + 0.5vw);
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 1%;
+}
+.card2i img {
+    margin-top: 2vw;
+    width: 8vw; /* Set width relative to the viewport width */
+    max-width: 100%; /* Set max-width to 100% to prevent image overflow */
+    height: auto; /* Set height to auto to maintain the aspect ratio */
+    object-fit: cover; /* Maintain the aspect ratio of the image */
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1050px) {
+    .container {
+      gap: 2%; /* Modified gap */
+      margin-top: 4%; /* Modified margin-top */
+    }
+  
+    .card1, .card2, .card3 {
+      width: 48%;
+      height: 220px;
+      margin-bottom: 4%; /* Added margin-bottom */
+    }
+
+    .cardli{
+        display: none;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      gap: 2%;
+      margin-top: 4%; /* Modified margin-top */
+    }
+  
+    .card1, .card2, .card3 {
+      width: 80%;
+      height: 200px;
+      margin-bottom: 4%; /* Added margin-bottom */
+    }
+  }
+  
