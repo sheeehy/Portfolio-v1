@@ -714,6 +714,7 @@ h1 span:hover {
     font-weight: bolder;
     flex-direction: column;
     padding-bottom: 2%;
+    text-decoration: none;
 
     color: rgba(255, 255, 255, 0.892);
 }
@@ -738,6 +739,7 @@ h1 span:hover {
 .card1h {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
+    text-decoration: none;
     /* Reduced margin-bottom to move text closer to the image */
 }
 
@@ -750,6 +752,7 @@ h1 span:hover {
     font-size: calc(0.5rem + 0.5vw);
     margin-left: 2%;
     margin-right: 2%;
+    text-decoration: none;
 }
 
 .card1i img {
@@ -827,7 +830,7 @@ h1 span:hover {
 .card3i img {
     margin-top: 4vw;
     width: 12vw;
-    /* Set width relative to the viewport width */
+    /* Set width relative to the viewport widt */
     max-width: 100%;
     /* Set max-width to 100% to prevent image overflow */
     height: auto;
@@ -880,6 +883,10 @@ h1 span:hover {
         height: 200px;
         margin-bottom: 4%;
     }
+
+    .contact-box{
+        height:28vh !important;
+    } 
 }
 
 
@@ -893,7 +900,7 @@ h1 span:hover {
     /* 100vw represents the full width of the viewport, and 40px is the sum of 20px left margin and 20px right margin */
     max-width: 460px;
     /* Set max-width to the original width to prevent it from becoming too large on bigger screens */
-    height: 36vh;
+    height: 34vh;
     /* Adjust this value to control the height on different screens */
     border-radius: 46px;
     background: linear-gradient(145deg, #1a2027, #161b20);
